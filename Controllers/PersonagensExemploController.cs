@@ -99,7 +99,7 @@ namespace RpgApi.Controllers
             return Ok(listaFinal);
         }
 
-        [HttpPost]
+        [HttpPost("GetZero")]
         public IActionResult AddPersonagemInteligencia(Personagem novoPersonagem)
         {
             if (novoPersonagem.Inteligencia == 0)
